@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <body class="darkmode">
+      <nav class="main-menu">
+        <div>
+          <div class="user-info">
+            <img src="/dist/img/fayzulla.jpg" alt="user" />
+            <p>Fayzulla Ozotov</p>
+          </div>
+          <ul>
+            <!--nav item dashboard-->
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-chart-bar nav-icon"></i>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/src/index.template.html">
+                <i class="fa fa-road nav-icon"></i>
+                <span class="nav-text">Roadmaps</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-heart nav-icon"></i>
+                <span class="nav-text">Saved</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-briefcase nav-icon"></i>
+                <span class="nav-text">Careers</span>
+              </a>
+            </li>
+          </ul>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-question nav-icon"></i>
+              <span class="nav-text">Quesitions</span>
+            </a>
+          </li>
+
+          <!--Questions new nav item-->
+        </div>
+
+        <ul>
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-gear nav-icon"></i>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-right-from-bracket nav-icon"></i>
+              <span class="nav-text">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="content">
+        <div class="left-content">
+          <div class="search-and-check">
+            <!-- <form class="search-box">
+              <input type="text" placeholder="Search event..." />
+              <i class="bx bx-search"></i>
+            </form> -->
+            <div class="interaction-control-mobile interactions">
+              <i class="fa-regular fa-envelope notified"></i>
+              <i class="fa-regular fa-bell notified"></i>
+              <div class="toggle" onclick="switchTheme()">
+                <div class="mode-icon moon">
+                  <i class="bx bxs-moon"></i>
+                </div>
+                <div class="mode-icon sun hidden">
+                  <i class="bx bxs-sun"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="header">
+            <picture class="morning-img hidden">
+              <img
+                class="header-mobile"
+                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/b4f4845f-4dc7-4470-b81a-677f46f211c2"
+                alt="" />
+              <img
+                class="header-tablet"
+                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8add6e87-577d-44cb-a7bb-18f0e4bd2163"
+                alt="" />
+              <img
+                class="header-desktop"
+                src="/full-responsive /dist/img/light.png"
+                alt="" />
+            </picture>
+
+            <picture class="night-img">
+              <img
+                class="header-mobile"
+                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/e349d3c2-ee2c-4982-866e-776236508fc9"
+                alt="" />
+              <img
+                class="header-tablet"
+                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/1266c923-a1d3-441a-bbb6-2dc6663b1f8b"
+                alt="" />
+              <img
+                class="header-desktop"
+                src="/full-responsive /dist/img/light_short.png"
+                alt="" />
+            </picture>
+          </div> -->
+
+
+
+
+ 
+
+              <!-- <div class="reviews">
+                <h1>Past Event Reviews</h1>
+                <div class="review-container">
+                  <div class="card review-card">
+                    <h2>Metal Sculpture Workshop</h2>
+                    <div class="ratings">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                      <i class="bx bx-star"></i>
+                    </div>
+                    <p>
+                      The metal sculpture workshop was a bit tough because
+                      shaping the metal was harder than expected. It would have
+                      been better with simpler instructions on how to mold the
+                      material.
+                    </p>
+                  </div>
+
+                  <div class="card review-card">
+                    <h2>Electro Groove Night</h2>
+                    <div class="ratings">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star-half"></i>
+                    </div>
+                    <p>
+                      The Electro Groove Night was so much fun! The music was
+                      awesome, and everyone had a great time dancing – a
+                      fantastic night out for sure!
+                    </p>
+                  </div>
+
+                  <div class="card review-card">
+                    <h2>Wimbledon Championships - 2023 (Final)</h2>
+                    <div class="ratings">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p>
+                      Watching the Wimbledon final between Novak Djokovic and
+                      Carlos Alcaraz was so exciting! The intense match and
+                      incredible skills of the players made it a thrilling
+                      experience that I'll always remember.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+              <div class="right-content">
+              <div class="interaction-control interactions">
+                <i class="fa-regular fa-envelope notified"></i>
+                <i class="fa-regular fa-bell notified"></i>
+                <div class="toggle" onclick="switchTheme()">
+                  <div class="mode-icon moon">
+                    <i class="bx bxs-moon"></i>
+                  </div>
+                  <div class="mode-icon sun hidden">
+                    <i class="bx bxs-sun"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="analytics">
+                <h1>Analytics</h1>
+                <div class="analytics-container">
+                  <div class="total-events">
+                    <div class="event-number card">
+                      <h2>Learned Courses</h2>
+                      <p>20</p>
+                      <i class="bx bx-check-circle"></i>
+                    </div>
+                    <div class="event-number card">
+                      <h2>Upcoming Courses</h2>
+                      <p>12</p>
+                      <i class="bx bx-timer"></i>
+                    </div>
+                  </div>
+
+                  <div class="chart" id="doughnut-chart">
+                    <h2>Sitatistics of Development</h2>
+                    <canvas id="doughnut"></canvas>
+                    <ul></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+    <!-- partial -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

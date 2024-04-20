@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tech Pathway</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <body class="darkmode">
+      <nav class="main-menu">
+        <div>
+          <div class="user-info">
+            <img src="/dist/img/fayzulla.jpg" alt="user" />
+            <p>Fayzulla Ozotov</p>
+          </div>
+          <ul>
+            <!--nav item dashboard-->
+            <li class="nav-item">
+              <a href="/src/dashboard.html">
+                <i class="fa fa-chart-bar nav-icon"></i>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/src/index.template.html">
+                <i class="fa fa-road nav-icon"></i>
+                <span class="nav-text">Roadmaps</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-heart nav-icon"></i>
+                <span class="nav-text">Saved</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">
+                <i class="fa fa-briefcase nav-icon"></i>
+                <span class="nav-text">Careers</span>
+              </a>
+            </li>
+          </ul>
+
+          <!--Community new nav item-->
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-users nav-icon"></i>
+              <span class="nav-text">Community</span>
+            </a>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-question nav-icon"></i>
+              <span class="nav-text">Quesitions</span>
+            </a>
+          </li>
+
+          <!--Questions new nav item-->
+        </div>
+
+        <ul>
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-gear nav-icon"></i>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-right-from-bracket nav-icon"></i>
+              <span class="nav-text">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="content">
+        <div class="left-content">
+          <div class="search-and-check">
+            <!-- <form class="search-box">
+              <input type="text" placeholder="Search event..." />
+              <i class="bx bx-search"></i>
+            </form> -->
+            <div class="interaction-control-mobile interactions">
+              <!-- <i class="fa-regular fa-envelope notified"></i>
+              <i class="fa-regular fa-bell notified"></i> -->
+              <div class="toggle" onclick="switchTheme()">
+                <div class="mode-icon moon">
+                  <i class="bx bxs-moon"></i>
+                </div>
+                <div class="mode-icon sun hidden">
+                  <i class="bx bxs-sun"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="header">
+            <picture class="morning-img hidden">
+              <img
+                class="header-mobile"
+                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/b4f4845f-4dc7-4470-b81a-677f46f211c2"
+                alt="" />
+              <img
+                class="header-tablet"
+                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8add6e87-577d-44cb-a7bb-18f0e4bd2163"
+                alt="" />
+              <img
+                class="header-desktop"
+                src="/full-responsive /dist/img/light.png"
+                alt="" />
+            </picture>
+
+            <picture class="night-img">
+              <img
+                class="header-mobile"
+                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/e349d3c2-ee2c-4982-866e-776236508fc9"
+                alt="" />
+              <img
+                class="header-tablet"
+                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/1266c923-a1d3-441a-bbb6-2dc6663b1f8b"
+                alt="" />
+              <img
+                class="header-desktop"
+                src="/full-responsive /dist/img/light_short.png"
+                alt="" />
+            </picture>
+          </div> -->
+
+          <div class="right-content">
+            <div class="interaction-control interactions">
+              <i class="fa-regular fa-envelope notified"></i>
+              <i class="fa-regular fa-bell notified"></i>
+              <div class="toggle" onclick="switchTheme()">
+                <div class="mode-icon moon">
+                  <i class="bx bxs-moon"></i>
+                </div>
+                <div class="mode-icon sun hidden">
+                  <i class="bx bxs-sun"></i>
+                </div>
+              </div>
+            </div>
+
+          <div class="upcoming-events">
+            <h1>Recommended Roadmaps For You</h1>
+            <div class="event-container">
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="" />
+                  <p>6 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Fron-End Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 3 months, Beginner Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <span style="margin-left: 4px">(777)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #e48e2c">Development</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="Backend Development" />
+                  <p>6 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Backend Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 8 months, Beginner Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <span style="margin-left: 4px">(777)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #582bac">Development</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="DevOps" />
+                  <p>6 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>DevOps Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 12 months, Intermediate
+                    Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                  <span style="margin-left: 4px">(1023)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #6f42c1">Development</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="Full Stack Development" />
+                  <p>8 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Full Stack Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 8 months, Advanced Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <span style="margin-left: 4px">(542)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #17a2b8">Development</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="AI and Data Science" />
+                  <p>12 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>AI and Data Scientist Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 12 months, Advanced
+                    Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bx-star"></i>
+                  <span style="margin-left: 4px">(389)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #28a745">AI Development</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="Data Analyst" />
+                  <p>9 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Data Analyst Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 9 months, Intermediate
+                    Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                  <span style="margin-left: 4px">(689)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #007bff">Data Analysis</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="Data Analyst" />
+                  <p>9 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Data Analyst Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 9 months, Intermediate
+                    Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                  <span style="margin-left: 4px">(689)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #007bff">Data Analysis</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="Data Analyst" />
+                  <p>9 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Data Analyst Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 9 months, Intermediate
+                    Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                  <span style="margin-left: 4px">(689)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #007bff">Data Analysis</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="Data Analyst" />
+                  <p>9 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Data Analyst Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 9 months, Intermediate
+                    Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                  <span style="margin-left: 4px">(689)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #007bff">Data Analysis</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="Data Analyst" />
+                  <p>9 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Data Analyst Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 9 months, Intermediate
+                    Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                  <span style="margin-left: 4px">(689)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #007bff">Data Analysis</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="Data Analyst" />
+                  <p>9 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Data Analyst Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 9 months, Intermediate
+                    Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                  <span style="margin-left: 4px">(689)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #007bff">Data Analysis</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="card event-card">
+                <div class="event-header">
+                  <img
+                    src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png"
+                    alt="Data Analyst" />
+                  <p>9 months</p>
+                  <i class="bx bx-heart like-btn"></i>
+                </div>
+                <div class="event-content">
+                  <h2>Data Analyst Roadmap</h2>
+                  <p>
+                    <i class="bx bx-time like-btn"></i> 9 months, Intermediate
+                    Level
+                  </p>
+                </div>
+                <div class="ratings">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                  <span style="margin-left: 4px">(689)</span>
+                </div>
+                <div class="event-footer">
+                  <p style="background-color: #007bff">Data Analysis</p>
+                  <div class="btn-group">
+                    <button>Explore</button>
+                    <div class="share">
+                      <button class="share-btn">
+                        <i class="fa-solid fa-share"></i>
+                      </button>
+                      <ul class="popup">
+                        <li>
+                          <a href="#" style="color: rgb(79, 153, 213)"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" style="color: rgb(34, 173, 34)"
+                            ><i class="bx bxl-whatsapp"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              
+
+              <!-- <div class="reviews">
+                <h1>Past Event Reviews</h1>
+                <div class="review-container">
+                  <div class="card review-card">
+                    <h2>Metal Sculpture Workshop</h2>
+                    <div class="ratings">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bx-star"></i>
+                      <i class="bx bx-star"></i>
+                    </div>
+                    <p>
+                      The metal sculpture workshop was a bit tough because
+                      shaping the metal was harder than expected. It would have
+                      been better with simpler instructions on how to mold the
+                      material.
+                    </p>
+                  </div>
+
+                  <div class="card review-card">
+                    <h2>Electro Groove Night</h2>
+                    <div class="ratings">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star-half"></i>
+                    </div>
+                    <p>
+                      The Electro Groove Night was so much fun! The music was
+                      awesome, and everyone had a great time dancing – a
+                      fantastic night out for sure!
+                    </p>
+                  </div>
+
+                  <div class="card review-card">
+                    <h2>Wimbledon Championships - 2023 (Final)</h2>
+                    <div class="ratings">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <p>
+                      Watching the Wimbledon final between Novak Djokovic and
+                      Carlos Alcaraz was so exciting! The intense match and
+                      incredible skills of the players made it a thrilling
+                      experience that I'll always remember.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+              <!-- <div class="right-content">
+              <div class="interaction-control interactions">
+                <i class="fa-regular fa-envelope notified"></i>
+                <i class="fa-regular fa-bell notified"></i>
+                <div class="toggle" onclick="switchTheme()">
+                  <div class="mode-icon moon">
+                    <i class="bx bxs-moon"></i>
+                  </div>
+                  <div class="mode-icon sun hidden">
+                    <i class="bx bxs-sun"></i>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- <div class="analytics">
+                <h1>Analytics</h1>
+                <div class="analytics-container">
+                  <div class="total-events">
+                    <div class="event-number card">
+                      <h2>Learned Courses</h2>
+                      <p>20</p>
+                      <i class="bx bx-check-circle"></i>
+                    </div>
+                    <div class="event-number card">
+                      <h2>Upcoming Courses</h2>
+                      <p>12</p>
+                      <i class="bx bx-timer"></i>
+                    </div>
+                  </div>
+
+                  <div class="chart" id="doughnut-chart">
+                    <h2>Sitatistics of Development</h2>
+                    <canvas id="doughnut"></canvas>
+                    <ul></ul>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+    <!-- partial -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
